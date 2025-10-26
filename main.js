@@ -15,11 +15,16 @@ dragitem.forEach((items =>{
 container2.addEventListener("dragover",(e)=>{
     e.preventDefault();
     const draggingitem = document.querySelector(".dragging");
-    container2.appendChild(draggingitem);
+    if(draggingitem){
+        container2.appendChild(draggingitem);
+    }
+    
 })
 
 container1.addEventListener("dragover",(e)=>{
     e.preventDefault();
     const draggingitem = document.querySelector(".dragging");
-    container1.appendChild(draggingitem);
+    if(draggingitem){
+        container1.appendChild(draggingitem);
+    }
 })
